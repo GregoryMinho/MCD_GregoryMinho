@@ -24,12 +24,12 @@ if ($sql->rowCount() > 0) {
     <main>
         <h1>BANCO</h1><br>
 
-        <form action="Mercado_SeuJose.php" method="post">
+        <form action="DT_Mercado_SeuJose.php" method="post">
             <label for="produto">Insira o produto</label>
             <input type="text" name="produto"><br><br>
             <label for="quantidade">Insira a quantidade</label>
             <input type="number" name="quantidade"><br><br>
-            <label for="preco">Insira a quantidade</label>
+            <label for="preco">Insira a preço</label>
             <input type="number" name="preco"><br><br>
             <button type="submit">ENVIAR</button>
         </form><br>
