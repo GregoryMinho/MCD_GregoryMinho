@@ -32,13 +32,13 @@
 
         <?php foreach ($lista as $dados) : ?>
             <tr>
-                <td><?php echo $dados['id']; ?></td>
-                <td><?php echo $dados['produtos']; ?></td>
+                <td><?php echo $dados['id_prod']; ?></td>
+                <td><?php echo $dados['produto']; ?></td>
                 <td><?php echo $dados['quantidade']; ?></td>
                 <td><?php echo $dados['preco']; ?></td>
                 <td>
-                    <a href="editar.php?id=<?= $dados['id']; ?>">[Editar]</a>
-                    <a href="excluir.php?id=<?= $dados['id']; ?>">[Excluir]</a>
+                    <a href="editar.php?id=<?= $dados['id_prod']; ?>">[Editar]</a>
+                    <a href="excluir.php?id=<?= $dados['id_prod']; ?>">[Excluir]</a>
                 </td>
             </tr>
         <?php endforeach; ?>

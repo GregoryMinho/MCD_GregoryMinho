@@ -5,7 +5,7 @@ $produto = $_POST['produto'] ?? null;
 $quantidade = $_POST['quantidade'] ?? null;
 $preco = $_POST['preco'] ?? null;
 
-if ($nome && $email && $preco) {
+if ($produto && $quantidade && $preco) {
     $sql = $pdo->prepare("INSERT INTO Produtos (produto, quantidade, preco) VALUES (:produto, :quantidade, :preco)");
     $sql->bindValue(':produto', $produto);
     $sql->bindValue(':quantidade', $quantidade);
