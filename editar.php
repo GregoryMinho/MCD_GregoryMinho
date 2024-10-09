@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar</title>
 </head>
+
 <h1>Editar Usuário</h1>
+
 <?php
 require 'conexao.php';
 
 $id_prod = $_REQUEST["id_prod"];
 $dados = [];
 $sql = $pdo->prepare("SELECT * FROM Produtos WHERE id_prod = :id_prod");
-$sql->bindValue(":id", $id_prod);
+$sql->bindValue(":id_prod", $id_prod);
 $sql->execute();
 
 if ($sql->rowCount() > 0) {

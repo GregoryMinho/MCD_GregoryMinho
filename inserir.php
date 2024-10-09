@@ -22,14 +22,14 @@ if ($sql->rowCount() > 0) {
 
 <body>
     <main>
-        <h1>BANCO</h1><br>
+        <h1>Banco de Dados</h1><br>
 
         <form action="banco.php" method="post">
-            <label for="produto">Insira o produto</label>
+            <label for="produto">Insira o Produto</label>
             <input type="text" name="produto"><br><br>
-            <label for="quantidade">Insira a quantidade</label>
+            <label for="quantidade">Insira a Quantidade</label>
             <input type="number" name="quantidade"><br><br>
-            <label for="preco">Insira a preco</label>
+            <label for="preco">Insira o Preço</label>
             <input type="number" name="preco"><br><br>
             <button type="submit">ENVIAR</button>
         </form><br>
