@@ -1,5 +1,6 @@
 <?php 
     require 'conexao.php'; 
+
     $id_prod = $_POST['id_prod'];
     $produto = $_POST['produto'];
     $quantidade = $_POST['quantidade'];
@@ -12,6 +13,6 @@
 
     $sql->execute();
     
-header("Location:index.php");
+    header("Location:index.php");
 
 ?>
