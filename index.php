@@ -37,8 +37,8 @@
                 <td><?php echo $dados['quantidade']; ?></td>
                 <td><?php echo $dados['preco']; ?></td>
                 <td>
-                    <a href="editar.php?id=<?= $dados['id_prod']; ?>">[Editar]</a>
-                    <a href="excluir.php?id=<?= $dados['id_prod']; ?>">[Excluir]</a>
+                    <a href="editar.php?id_prod=<?= $dados['id_prod']; ?>">[Editar]</a>
+                    <a href="excluir.php?id_prod=<?= $dados['id_prod']; ?>">[Excluir]</a>
                 </td>
             </tr>
         <?php endforeach; ?>

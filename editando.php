@@ -6,10 +6,11 @@
     $quantidade = $_POST['quantidade'];
     $preco = $_POST['preco'];
     
-    $sql = $pdo->prepare("UPDATE Produtos SET produto = :produto , quantidade = :quantidade , preco = :preco WHERE id_prod = $id_prod");
+    $sql = $pdo->prepare("UPDATE Produtos SET produto = :produto , quantidade = :quantidade , preco = :preco WHERE id_prod = :id_prod");
     $sql->bindValue(':produto',$produto);
     $sql->bindValue(':quantidade',$quantidade);
     $sql->bindValue(':preco',$preco);
+    $sql->bindValue(':id_prod',$id_prod);
 
     $sql->execute();
     

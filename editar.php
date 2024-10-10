@@ -7,7 +7,7 @@
     <title>Editar</title>
 </head>
 
-<h1>Editar Usuário</h1>
+<h1>Editar Info Produtos</h1>
 
 <?php
 require 'conexao.php';
@@ -29,13 +29,13 @@ if ($sql->rowCount() > 0) {
 <form action="editando.php" method="POST">
     <input type="hidden" name="id_prod" id="id_prod" value="<?= $dados['id_prod']; ?>">
     <label for="produto">
-        produto <input type="text" name="produto" value="<?= $dados['produto']; ?>">
+        Produto <input type="text" name="produto" value="<?= $dados['produto']; ?>">
     </label>
     <label for="quantidade">
-        quantidade <input type="number" name="quantidade" value="<?= $dados['quantidade']; ?>">
+        Quantidade <input type="number" name="quantidade" value="<?= $dados['quantidade']; ?>">
     </label>
     <label for="preco">
-        preco <input type="number" name="preco" value="<?= $dados['preco']; ?>">
+        Preço <input type="number" name="preco" value="<?= $dados['preco']; ?>">
     </label>
     <button type="submit">Salvar</button>
 </form>
